@@ -108,9 +108,15 @@
     pointer-events: all
 }
 
-
 .not_poce_link {
     pointer-events: none;
+}
+
+/* Styles for specific pages*/
+
+/* Topic 66: Epidemiology */
+.poce_page #rfs .rowCondition h3::before {
+    content: none;
 }
 
 @font-face {
