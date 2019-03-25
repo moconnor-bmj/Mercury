@@ -2667,3 +2667,55 @@ function topicNav() {
         });
     }
 }
+
+
+// Comorbidities 
+// 1.stickie card
+$(function() {
+    $(document).on('scroll', function() {
+        if( $(this).scrollTop() >= $('#como-1').position().top - 110 ){
+            $('#como-2').css('display', 'block');
+        }
+        else {
+            $('#como-2').css('display', 'none');
+        }
+    });
+});
+
+// 2. Launch modal on page load
+$(function() {
+    $('#editComo').modal('show');
+});
+
+// 3. Add checked comos to the 'Added Comorbidities' list
+$(function() {
+  //enable/disable 'Show Treatment Algorithm' button
+  var comorbidities = $("input[name='comorbidity']");
+  comorbidities.on('change', function () {
+    $('#showalg').toggleClass("btn-secondary", comorbidities.is(":checked"));
+  });
+
+  // Add / remove selected values to / from the page
+  $("input[name='comorbidity']").change(function() {
+    var value = $(this).val(),
+        $list = $("#comoselected-1, #comoselected-2");
+    if (this.checked) {
+        //add to the comorbidities list
+        $list.append("<span data-value='" + value + "'>" + value + "</span>  ");
+    }
+    else {
+        //remove from the comorbidities list
+        $list.find('span[data-value="' + value + '"]').fadeOut("fast", function() {
+            $(this).remove();
+        });
+    }
+  });
+});
+
+$(function() {
+  var comorbidities = $("input[name='comorbidity']");
+
+  comorbidities.on('change', function () {
+    $('#showalg').toggleClass("btn-secondary", comorbidities.is(":checked"));
+  });
+});
