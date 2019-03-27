@@ -300,8 +300,8 @@ window.addEventListener("load", function () {
         "position": "bottom",
         "content": {
             "href": "https://www.bmj.com/company/your-privacy/cookies-policy/",
-            "message": jQuery.i18n.prop('js.main.cookie.policy.message'),
-            "link": jQuery.i18n.prop('js.main.cookie.policy.link')
+            "message": jQuery.i18n.prop('We use cookies to improve our service and to tailor our content and advertising to you. You can manage your cookie settings via your browser at any time. To learn more about how we use cookies, please see our cookies policy'),
+            "link": jQuery.i18n.prop('https://www.bmj.com/company/your-privacy/cookies-policy/')
         }
     });
 });
