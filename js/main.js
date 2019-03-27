@@ -1202,13 +1202,13 @@ function createPops(p) {
             var fullTextMarkup = '';
             if (fullTextUrl != undefined) {
                 fullTextMarkup = '<p><a rel="external" class="web-link" target="_blank" href="' +
-                    fullTextUrl + '">' + jQuery.i18n.prop('js.content.full.text') + ' <span class="icon icon-bp-icons-outbound-link"></span></a></p>';
+                    fullTextUrl + '">' + jQuery.i18n.prop('Full text') + ' <span class="icon icon-bp-icons-outbound-link"></span></a></p>';
             }
             var abstractUrl = $(this).siblings(".referenceUniqueId").html();
             var abstractUrlMarkup = '';
             if (abstractUrl != undefined) {
                 abstractUrlMarkup = '<p><a rel="external" class="web-link" target="_blank" href="' +
-                    abstractUrl + '">' + jQuery.i18n.prop('js.content.abstract') + ' <span class="icon icon-bp-icons-outbound-link"></span></a></p>';
+                    abstractUrl + '">' + jQuery.i18n.prop('Abstract') + ' <span class="icon icon-bp-icons-outbound-link"></span></a></p>';
             }
             var openUrlId = $(this).siblings(".referenceOpenUrlId").html();
             var openUrlMarkup = '';
@@ -1220,7 +1220,7 @@ function createPops(p) {
             }
             if (!$("#video-page").length) {
                 return '<p><b>' + refId.replace("[", "").replace("]", "") + '.&nbsp;</b>' + refContent + '</p>' +
-                    fullTextMarkup + abstractUrlMarkup + openUrlMarkup + '<p class="ref-link"><a href="/topics/' + langCode + '/' + topicId + '/references">' + jQuery.i18n.prop('js.content.view.all.references') + '</a></p>';
+                    fullTextMarkup + abstractUrlMarkup + openUrlMarkup + '<p class="ref-link"><a href="/topics/' + langCode + '/' + topicId + '/references">' + jQuery.i18n.prop('VIEW ALL REFERENCES') + '</a></p>';
             } else {
                 return '<p><b>' + refId.replace("[", "").replace("]", "") + '.&nbsp;</b>' + refContent + '</p>' + fullTextMarkup + abstractUrlMarkup;
             }
