@@ -1,6 +1,4 @@
 /* POCE & COMO stuff (move to scss when time comes) */
-
-
 #topicNav.stickme #como-2 {
     position: fixed;
     top: 110px;
@@ -48,7 +46,10 @@
     border-radius: 4px
 }
 
-#como-1.card button:hover,#como-1.card button:focus,#como-2.card button:hover,#como-2.card button:focus {
+#como-1.card button:hover,
+#como-1.card button:focus,
+#como-2.card button:hover,
+#como-2.card button:focus {
     background-color: #c50084;
     color: #fff;
     outline: none
@@ -110,6 +111,60 @@
 
 .not_poce_link {
     pointer-events: none;
+}
+
+/* POCE Typography */
+
+/* div with border and icon */
+.poce_urgent {
+   color: #c50084;
+}
+
+#poce_content section#poce_urgent {
+    margin: 0 0 1rem 0;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-top: 4px solid #c50084;
+    border-right: 1px solid #c50084;
+    border-bottom: 4px solid #c50084;
+    border-left: 1px solid #c50084;
+    border-radius: 15px;
+}
+
+#poce_content section#poce_urgent {
+    margin-bottom: 1.5rem;
+}
+#poce_content section#poce_urgent ul {
+    list-style: disc inside;
+    margin-bottom: -10px !important;
+}
+
+#poce_content section#poce_urgentt ul ul {
+    list-style: circle inside;
+}
+
+#poce_content section#poce_urgent ul li:before, 
+#poce_content section#poce_urgent ul ul li:before {
+    content: none;
+}
+
+#poce_content section#poce_urgent ul li {
+    padding: 0 0 10px 20px;
+    text-indent: -24px;
+}
+
+#poce_content section#poce_urgent ul ul li {
+    padding: 0;
+    text-indent: -24px;
+    margin-bottom: 6px;
+}
+
+#poce_content section#poce_urgent ul:nth-child(1) {
+    margin-top: 10px;
+}
+
+#poce_content section#poce_urgent ul ul li:nth-child(1) {
+    margin-top: -10px;
 }
 
 /* Styles for specific pages*/
