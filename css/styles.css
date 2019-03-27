@@ -116,10 +116,6 @@
 /* POCE Typography */
 
 /* div with border and icon */
-.poce_urgent {
-   color: #c50084;
-}
-
 #poce_content section#poce_urgent {
     margin: 0 0 1rem 0;
     padding: 1rem;
@@ -134,6 +130,11 @@
 #poce_content section#poce_urgent {
     margin-bottom: 1.5rem;
 }
+
+#poce_content section#poce_urgent h3 {
+    color: #c50084;
+}
+
 #poce_content section#poce_urgent ul {
     list-style: disc inside;
     margin-bottom: -10px !important;
