@@ -25,14 +25,14 @@ function createPops(p){// Popover initialisation, Setting & Content - so no XSS 
 			if (fullTextUrl != undefined) {
 				fullTextMarkup = '<p><a rel="external" class="web-link" target="_blank" href="'
 						//+ fullTextUrl + '">Full text <span class="icon icon-bp-icons-outbound-link"></span></a></p>';
-					      + fullTextUrl + '">' + jQuery.i18n.prop('js.content.full.text') + ' <span class="icon icon-bp-icons-outbound-link"></span></a></p>';
+					      + fullTextUrl + '">' + jQuery.i18n.prop('Full text') + ' <span class="icon icon-bp-icons-outbound-link"></span></a></p>';
 			}
 			var abstractUrl=$(this).siblings(".referenceUniqueId").html();
 			var abstractUrlMarkup='';
 			if(abstractUrl!=undefined){
 				abstractUrlMarkup='<p><a rel="external" class="web-link" target="_blank" href="'
 					//+ abstractUrl + '">Abstract <span class="icon icon-bp-icons-outbound-link"></span></a></p>';
-					+ abstractUrl + '">' + jQuery.i18n.prop('js.content.abstract') + ' <span class="icon icon-bp-icons-outbound-link"></span></a></p>';
+					+ abstractUrl + '">' + jQuery.i18n.prop('Abstract') + ' <span class="icon icon-bp-icons-outbound-link"></span></a></p>';
 			}
 			
 			var openUrlId=$(this).siblings(".referenceOpenUrlId").html();
