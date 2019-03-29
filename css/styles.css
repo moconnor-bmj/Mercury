@@ -125,9 +125,6 @@
     border-bottom: 4px solid #c50084;
     border-left: 1px solid #c50084;
     border-radius: 15px;
-}
-
-#poce_content section#poce_urgent {
     margin-bottom: 1.5rem;
 }
 
@@ -135,26 +132,26 @@
     color: #c50084;
 }
 
-#poce_content section#poce_urgent ul {
+#poce_content ul {
     list-style: disc inside;
     margin-bottom: -10px !important;
 }
 
-#poce_content section#poce_urgentt ul ul {
+#poce_content ul ul {
     list-style: circle inside;
 }
 
-#poce_content section#poce_urgent ul li:before, 
-#poce_content section#poce_urgent ul ul li:before {
+#poce_content ul li:before, 
+#poce_content ul ul li:before {
     content: none;
 }
 
-#poce_content section#poce_urgent ul li {
+#poce_content ul li {
     padding: 0 0 10px 20px;
     text-indent: -24px;
 }
 
-#poce_content section#poce_urgent ul ul li {
+#poce_content ul ul li {
     padding: 0;
     text-indent: -24px;
     margin-bottom: 6px;
@@ -168,7 +165,68 @@
     margin-top: -10px;
 }
 
-/* Styles for specific pages*/
+#poce_content .rowDetails p ul {
+    padding-bottom: 1.5rem;
+}
+
+#poce_content #tip_pitfall {
+    background-color: #e5eef7;
+    color: #c50084;
+    border-top: 3px solid #c50084;
+    border-bottom: 3px solid #c50084;
+    margin: 0 25% 0 25%;
+    text-align: center;
+    box-shadow: none;
+}
+
+#poce_content #tip_pitfall .card-block {
+    padding-bottom: .5rem !important
+}
+
+#poce_content #tip_pitfall .material-icons {
+    display: inline;
+    margin-right: 5px;
+    color: #c50084;
+    font-size: 36px;
+    position: relative;
+    top: -5px;
+}
+
+#poce_content .histExam .card-block p.card-text {
+    margin-bottom: .5rem;
+}
+/* POCE Table - from divs */
+/* Risk Factors */
+#poce_content .table-responsive {
+    margin: 1rem 0;
+}
+#poce_content .table thead th {
+    background-color: #01579b;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 0;
+    height: 36px;
+}
+
+#poce_content .table th {
+    border-right: 1px solid #e1e1e1;
+}
+
+#poce_content .table tbody td, 
+#poce_content .table tbody th {
+    font-size: inherit;
+}
+
+#poce_content .table tbody td p, 
+#poce_content .table tbody th p {
+    margin-bottom: -10px;
+}
+#poce_content .table tbody td ul, 
+#poce_content .table tbody th ul {
+    margin-bottom: 1rem !important;
+}
 
 /* Topic 66: Epidemiology */
 .poce_page #rfs .rowCondition h3::before {
