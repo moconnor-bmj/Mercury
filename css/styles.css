@@ -132,9 +132,14 @@
     color: #c50084;
 }
 
+#poce_content p {
+    width: 75%;
+}
+
 #poce_content ul {
     list-style: disc inside;
     margin-bottom: -10px !important;
+    width: 75%;
 }
 
 #poce_content ul ul {
@@ -197,9 +202,7 @@
 }
 /* POCE Table - from divs */
 /* Risk Factors */
-#poce_content .table-responsive {
-    margin: 1rem 0;
-}
+
 #poce_content .table thead th {
     background-color: #01579b;
     color: #fff;
@@ -228,10 +231,96 @@
     margin-bottom: 1rem !important;
 }
 
+#poce_content #wellsScore {
+    max-width: 96%;
+    width: 96%;
+}
+
+/* History & EXam */
+#kdfc .rowHead h3 a,
+#kdfu .rowHead h3 a,
+#kdf .rowHead h3 a {
+    color: #fff;
+}
+
+#kdfc .card-block h3>a>span, 
+#kdfu .card-block h3>a>span {
+    position: relative;
+    top: 5px;
+}
+
+#kdf .accordion-toggle,
+#kdfc .accordion-toggle,
+#kdfu .accordion-toggle {
+    padding-left: 0;
+    cursor: pointer;
+}
+
 /* Topic 66: Epidemiology */
 .poce_page #rfs .rowCondition h3::before {
     content: none;
 }
+
+/* POCE Evience Accordions */
+/* Style the buttons that are used to open and close the accordion panel */
+.evidence-accordion {
+    margin: 3em auto;
+    max-width: 30em;
+  }
+  .toggle {
+    display: none;
+  }
+  .option {
+    position: relative;
+    margin-bottom: 1em;
+  }
+  .title, .content {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: all 0.2s;
+  }
+  .title {
+    background: #fff;
+    padding: 1em;
+    display: block;
+    color: #7a7572;
+    font-weight: bold;
+  }
+  .title:after, .title:before {
+    content: '';
+    position: absolute;
+    right: 1.25em;
+    top: 1.25em;
+    width: 2px;
+    height: 0.75em;
+    background-color: #7a7572;
+    transition: all 0.2s;
+  }
+  .title:after {
+    transform: rotate(90deg);
+  }
+  .content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  .content p {
+    margin: 0;
+    padding: 0.5em 1em 1em;
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+  .toggle:checked + .title, .toggle:checked + .title + .content {
+    /* box-shadow: 3px 3px 6px #ddd, -3px 3px 6px #ddd; */
+  }
+  .toggle:checked + .title + .content {
+    max-height: 500px;
+  }
+  .toggle:checked + .title:before {
+    transform: rotate(90deg) !important;
+  }
+  
+
 
 @font-face {
     font-family: "bmj-icons";
