@@ -10856,7 +10856,7 @@ span.badge.badge-bp.notification-number {
 }
 
 #poce_contents #tip_pitfall .card-block p+ul {
-    padding-top: 1rem !important;
+    padding-left: 1rem !important;
     margin-bottom: 0 !important
 }
 
@@ -10986,6 +10986,13 @@ span.badge.badge-bp.notification-number {
 #poce_contents .toggle:checked+.title:before {
     transform: rotate(90deg) !important
 }
+
+/* Diagnosis - Investigations */
+
+#poce_contents.invest .rowHead {
+    margin-bottom: 16px;
+}
+
 
 .doc-jumbotron {
     background-position: 50% 50%;
