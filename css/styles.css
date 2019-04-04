@@ -10854,7 +10854,7 @@ span.badge.badge-bp.notification-number {
 #poce_contents #tip_pitfall .card-block {
     padding: 1rem
 }
-
+/* CHANGE PL VALUE IN SASS FILE */
 #poce_contents #tip_pitfall .card-block p+ul {
     padding-left: 1rem !important;
     margin-bottom: 0 !important
@@ -10986,13 +10986,20 @@ span.badge.badge-bp.notification-number {
 #poce_contents .toggle:checked+.title:before {
     transform: rotate(90deg) !important
 }
-
-/* Diagnosis - Investigations */
-
+/************  NEW SASS CONTENT  ******************/
+/* Diagnosis - Investigations - CHANGE IN SASS FILE*/
 #poce_contents.invest .rowHead {
     margin-bottom: 16px;
 }
+#poce_contents .poce_urgent {
+    padding: 1rem !important;
+    border: 1px dashed #c50084;
+    background-color: #f8e0f0;
+}
 
+#poce_contents .poce_urgent h3 {
+    color: #c50084;
+}
 
 .doc-jumbotron {
     background-position: 50% 50%;
