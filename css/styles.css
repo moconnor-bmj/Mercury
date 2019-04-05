@@ -11001,6 +11001,13 @@ span.badge.badge-bp.notification-number {
     color: #c50084;
 }
 
+/* Diag Recommendations - alignment fix */
+#poce_contents #kpoints .card .card-block p,
+#poce_contents #diagrecs .card .card-block p {
+    margin-left: -7px;
+}
+
+
 .doc-jumbotron {
     background-position: 50% 50%;
     background-repeat: no-repeat;
