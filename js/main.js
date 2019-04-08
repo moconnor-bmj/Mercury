@@ -2684,13 +2684,13 @@ $(function() {
 
 // 2. Launch modal on page load
 $(function() {
-    $('#editComo').modal('show');
+    // $('#editComo').modal('show');
 });
 
 // 3. Add checked comos to the 'Added Comorbidities' list
 $(function() {
   //enable/disable 'Show Treatment Algorithm' button
-  var comorbidities = $("input[name='comorbidity']");
+  var comorbidities = $('#tmp.treatment-table').find("input[name='comorbidity']");
   comorbidities.on('change', function () {
     $('#showalg').toggleClass("btn-secondary", comorbidities.is(":checked"));
   });
@@ -2699,22 +2699,35 @@ $(function() {
   $("input[name='comorbidity']").change(function() {
     var value = $(this).val(),
         $list = $("#comoselected-1, #comoselected-2");
+        var comochooser = $(this).attr('id');
+
     if (this.checked) {
-        //add to the comorbidities list
+        
+        // Add to the comorbidities list
         $list.append("<span data-value='" + value + "'>" + value + "</span>  ");
+        
+        // If checked, show it in the 'Add comorbidities' list
+        $('#' + comochooser + '-como-content').css('display', 'block');
+        
+        // If section has the #-como-content, find the txtwrap class and add the c+ icon 
+        $('section.panel-group').has('#' + comochooser + '-como-content').find('.txtwrap').removeClass('no-icon');
+        
     }
     else {
         //remove from the comorbidities list
         $list.find('span[data-value="' + value + '"]').fadeOut("fast", function() {
             $(this).remove();
         });
+        $('#' + comochooser + '-como-content').css('display', 'none');
+        // If section has the -como-content, find the txtwrap class and remove the c+ icon 
+        $('section.panel-group').has('#' + comochooser + '-como-content').find('.txtwrap').addClass('no-icon');
     }
   });
 });
 
+// Modal button behaviour
 $(function() {
   var comorbidities = $("input[name='comorbidity']");
-
   comorbidities.on('change', function () {
     $('#showalg').toggleClass("btn-secondary", comorbidities.is(":checked"));
   });

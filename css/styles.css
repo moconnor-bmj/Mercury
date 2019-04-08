@@ -10808,6 +10808,78 @@ span.badge.badge-bp.notification-number {
     pointer-events: all
 }
 
+/* POCE:: Treatment Algorithm */
+
+/* Wrapper */
+#poce_contents.treatment-algorithm .card-block {
+    padding: 0 !important;
+}
+
+#poce_contents.treatment-algorithm .treatment-wrap {
+    
+}
+
+#poce_contents.treatment-algorithm .treatment-box-cplus {
+    border: 1px solid #c50084;
+    background: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#poce_contents.treatment-algorithm .treatment-box-cplus p.como_link a {
+    color: #c50084;
+    text-decoration: none;
+}
+
+#poce_contents.treatment-algorithm .treatment-box-cplus p.como_link a:hover {
+    text-decoration: underline;
+}
+
+#poce_drug_msg {
+    border: 1px dashed #c50084;
+    display: table-cell;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem 1rem 0;
+    text-indent: -16px;
+}
+
+#poce_drug_msg h3 {
+    padding-left: 55px;
+    text-indent: -23px;
+}
+
+#poce_drug_msg .material-icons {
+    color: #c50084;
+    font-size: 42px;
+    position: relative;
+    top: 7px;
+}
+
+
+
+
+
+
+#poce-contents div[id$='-como-content'] {
+    padding: 1rem !important;
+    border: 1px dashed #c50084;
+    background-color: #f8e0f0;
+}
+
+#poce_content .treatment-table .txtwrap::after {
+    content: "\e90c";
+    font-family: 'Material Icons';
+    font-size: 30px;
+    position: absolute;
+    top: -3px;
+    margin-left: 10px;
+    color: #c50084;
+}
+
+#poce_content .treatment-table .txtwrap.no-icon::after {
+    content: " ";
+}
+
 #poce_contents ul {
     list-style: disc inside;
     padding-top: 0;
