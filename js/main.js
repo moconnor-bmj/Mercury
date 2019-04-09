@@ -2670,33 +2670,38 @@ function topicNav() {
 
 
 // Comorbidities 
-// 1.stickie card
+// 1.stickie comorbidities card
 $(function() {
+    var cpluscard = $('#tmp').find('#como-1');
+    var cplussticky = $('#tmp').find('#como-2');
     $(document).on('scroll', function() {
-        if( $(this).scrollTop() >= $('#como-1').position().top - 110 ){
-            $('#como-2').css('display', 'block');
+        if( $(this).scrollTop() >= $(cpluscard).position().top - 110 ){
+            $(cplussticky).css('display', 'block');
         }
         else {
-            $('#como-2').css('display', 'none');
+            $(cplussticky).css('display', 'none');
         }
     });
 });
 
-// 2. Launch modal on page load
+// 2. Launch select comorbidities modal on page load
 $(function() {
-    // $('#editComo').modal('show');
+    $('#editComo').modal('show');
 });
 
 // 3. Add checked comos to the 'Added Comorbidities' list
 $(function() {
-  //enable/disable 'Show Treatment Algorithm' button
-  var comorbidities = $('#tmp.treatment-table').find("input[name='comorbidity']");
-  comorbidities.on('change', function () {
-    $('#showalg').toggleClass("btn-secondary", comorbidities.is(":checked"));
-  });
+  
+    // Enable/disable 'Show Treatment Algorithm' button
+    var comorbidities = $('#tmp.treatment-table').find("input[name='comorbidity']");
+    comorbidities.on('change', function () {
+        $('#showalg').toggleClass("btn-secondary", comorbidities.is(":checked"));
+    });
 
-  // Add / remove selected values to / from the page
-  $("input[name='comorbidity']").change(function() {
+   
+
+    // Add / remove selected values to / from the 'Add comorbidities' panel
+    $("input[name='comorbidity']").change(function() {
     var value = $(this).val(),
         $list = $("#comoselected-1, #comoselected-2");
         var comochooser = $(this).attr('id');
@@ -2706,21 +2711,30 @@ $(function() {
         // Add to the comorbidities list
         $list.append("<span data-value='" + value + "'>" + value + "</span>  ");
         
-        // If checked, show it in the 'Add comorbidities' list
+        // Show the relevant content on the page
         $('#' + comochooser + '-como-content').css('display', 'block');
         
         // If section has the #-como-content, find the txtwrap class and add the c+ icon 
         $('section.panel-group').has('#' + comochooser + '-como-content').find('.txtwrap').removeClass('no-icon');
         
+        // If comorbidities list has content, show the edit button
+        $('#editComolist-1, #editComolist-2').show();
+        
     }
     else {
-        //remove from the comorbidities list
+        // Remove from the comorbidities list
         $list.find('span[data-value="' + value + '"]').fadeOut("fast", function() {
             $(this).remove();
         });
+        
+        // Hide the relevant content on the page
         $('#' + comochooser + '-como-content').css('display', 'none');
-        // If section has the -como-content, find the txtwrap class and remove the c+ icon 
+        
+        // If section doesn't have the -como-content, find the txtwrap class and remove the c+ icon 
         $('section.panel-group').has('#' + comochooser + '-como-content').find('.txtwrap').addClass('no-icon');
+        
+        // If comorbidities list hasn't got any content, hide the edit button
+        $('#editComolist-1, #editComolist-2').hide();
     }
   });
 });
@@ -2732,6 +2746,29 @@ $(function() {
     $('#showalg').toggleClass("btn-secondary", comorbidities.is(":checked"));
   });
 });
+
+// Drug hyperlink to toggle between cplus & no cplus, changing content
+$(function() {
+    $('#como_link_1').click(function(event) {
+        event.preventDefault();
+        $(this).html('&#9664; Back to drug doses with added comorbidities');
+        if ($('#no_cplus_drug_msg').is(':visible')){
+            $(this).html('&#9654; Show drug doses for a patient with no comorbidities');
+            $('#no_cplus_drug_msg').hide();
+            $('#cplus_drug_msg').show();
+            $('#drug_info_cplus').show();
+            $('#drug_info_no_cplus').hide();
+        } else {
+            $(this).html('&#9664; Back to drug doses with added comorbidities');
+            $('#no_cplus_drug_msg').show();
+            $('#cplus_drug_msg').hide();
+            $('#drug_info_cplus').hide();
+            $('#drug_info_no_cplus').show();
+        }
+        return false;
+    });
+});
+
 
 // POCE Evidence Accordion (nested)
 var acc = document.getElementsByClassName("evidence-accordion");
