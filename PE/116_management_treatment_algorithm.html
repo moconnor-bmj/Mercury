@@ -508,41 +508,52 @@
                                     <!-- <h4 th:text="${tier.key} + ' options'"></h4> -->
                                        <h4>Primary options</h4>
 
-                                       <div id="cplus_drug_msg">
+                                       <div id="como-yes">
+                                          <div id="cplus_drug_msg">
                                              <h3><span class="material-icons">copyright</span> Drug choice, dose and interactions may be affected by the patient's comorbidities. Check your local drug formulary.</h3>
+                                          </div>
+                                          <div id="drug_info_cplus" class="mt-3">
+                                             <p><a href="#drugDbPop_b3fb3286-271c-47f6-ae52-1bd3958b1e9b_en-gb" data-trigger="click focus" class="drugDbPop" data-toggle="popover" data-original-title="" title="">adrenaline (epinephrine)</a><span>: </span></p>
+                                             <p class="withCKD">For patients with CKD <a href="#">see dose in the Renal Drug Handbook</a></p>
+   
+                                             <p class="small-or">OR</p>
+   
+                                             <p><a href="#drugDbPop_46d9672e-3313-452d-9bfd-a4ddf90b32f3_en-gb" data-trigger="click focus" class="drugDbPop" data-toggle="popover" data-original-title="" title="">noradrenaline (norepinephrine)</a><span>: </span></p>
+                                             <p class="withCKD">For patients with CKD <a href="#">see dose in the Renal Drug Handbook</a></p>
+                                             
+                                             <p class="small-or">OR</p>
+   
+                                             <p><a href="#drugDbPop_a37dcf97-a50b-4776-ad01-6fd4a31bb295_en-gb" data-trigger="click focus" class="drugDbPop"   data-toggle="popover" data-original-title="" title="">dobutamine</a><span>: </span></p>
+                                             <p class="withCKD">For patients with CKD <a href="#">see dose in the Renal Drug Handbook</a></p>
+                                          </div>
                                        </div>
-                                       <div id="no_cplus_drug_msg">
+
+                                       <div id="como-no">
+                                          <div id="no_cplus_drug_msg">
                                              <h3><span class="material-icons">warning</span> <span>These drug options and doses relate to a patient with no comorbidities.</span></h3>
+                                          </div>
+                                          <div id="drug_info_no_cplus" class="mt-3" style="display: none;">
+                                             <p><a href="#drugDbPop_b3fb3286-271c-47f6-ae52-1bd3958b1e9b_en-gb" data-trigger="click focus" class="drugDbPop" data-toggle="popover" data-original-title="" title="">adrenaline (epinephrine)</a><span>: </span><span>2-10 micrograms/minute by intravenous infusion initially, adjust dose according to response</span></p>
+                                             
+                                             <p class="small-or">OR</p>
+   
+                                             <p><a href="#drugDbPop_46d9672e-3313-452d-9bfd-a4ddf90b32f3_en-gb" data-trigger="click focus" class="drugDbPop" data-toggle="popover" data-original-title="" title="">noradrenaline (norepinephrine)</a><span>: </span><span>0.4 to 0.8 mg/hour by intravenous infusion initially, adjust dose according to response | MORE:  Dose refers to noradrenaline base</span>
+                                             </p>
+   
+                                             <p class="small-or">OR</p>
+   
+                                             <p><a href="#drugDbPop_a37dcf97-a50b-4776-ad01-6fd4a31bb295_en-gb" data-trigger="click focus" class="drugDbPop"   data-toggle="popover" data-original-title="" title="">dobutamine</a><span>: </span><span>2.5 to 10 micrograms/kg/minute by intravenous infusion initially, adjust dose according to response, maximum 40 micrograms/kg/minute</span></p>
+   
+                                          </div>
+
                                        </div>
 
-                                       <div id="drug_info_no_cplus" class="mt-3" style="display: none;">
-                                          <p><a href="#drugDbPop_b3fb3286-271c-47f6-ae52-1bd3958b1e9b_en-gb" data-trigger="click focus" class="drugDbPop" data-toggle="popover" data-original-title="" title="">adrenaline (epinephrine)</a><span>: </span><span>2-10 micrograms/minute by intravenous infusion initially, adjust dose according to response</span></p>
-                                          
-                                          <p class="small-or">OR</p>
+                                       
+                                       
 
-                                          <p><a href="#drugDbPop_46d9672e-3313-452d-9bfd-a4ddf90b32f3_en-gb" data-trigger="click focus" class="drugDbPop" data-toggle="popover" data-original-title="" title="">noradrenaline (norepinephrine)</a><span>: </span><span>0.4 to 0.8 mg/hour by intravenous infusion initially, adjust dose according to response | MORE:  Dose refers to noradrenaline base</span>
-                                          </p>
+                                       
 
-                                          <p class="small-or">OR</p>
-
-                                          <p><a href="#drugDbPop_a37dcf97-a50b-4776-ad01-6fd4a31bb295_en-gb" data-trigger="click focus" class="drugDbPop"   data-toggle="popover" data-original-title="" title="">dobutamine</a><span>: </span><span>2.5 to 10 micrograms/kg/minute by intravenous infusion initially, adjust dose according to response, maximum 40 micrograms/kg/minute</span></p>
-
-                                       </div>
-
-                                       <div id="drug_info_cplus" class="mt-3">
-                                          <p><a href="#drugDbPop_b3fb3286-271c-47f6-ae52-1bd3958b1e9b_en-gb" data-trigger="click focus" class="drugDbPop" data-toggle="popover" data-original-title="" title="">adrenaline (epinephrine)</a><span>: </span></p>
-                                          <p class="withCKD">For patients with CKD <a href="#">see dose in the Renal Drug Handbook</a></p>
-
-                                          <p class="small-or">OR</p>
-
-                                          <p><a href="#drugDbPop_46d9672e-3313-452d-9bfd-a4ddf90b32f3_en-gb" data-trigger="click focus" class="drugDbPop" data-toggle="popover" data-original-title="" title="">noradrenaline (norepinephrine)</a><span>: </span></p>
-                                          <p class="withCKD">For patients with CKD <a href="#">see dose in the Renal Drug Handbook</a></p>
-                                          
-                                          <p class="small-or">OR</p>
-
-                                          <p><a href="#drugDbPop_a37dcf97-a50b-4776-ad01-6fd4a31bb295_en-gb" data-trigger="click focus" class="drugDbPop"   data-toggle="popover" data-original-title="" title="">dobutamine</a><span>: </span></p>
-                                          <p class="withCKD">For patients with CKD <a href="#">see dose in the Renal Drug Handbook</a></p>
-                                       </div>
+                                       
                                        <div class="mt-4">
                                           <a id="como_link_1" href="#">&#9654; Show drug doses for a patient with no comorbidities</a>
                                        </div>
@@ -4365,10 +4376,10 @@
                         </button>
                      </div>
                      <div class="modal-body">
-                        <p>Treatment recommendations for acute pancreatitis will change dependent on your patient's comorbitities</p>
                         <div class="row">
                            <div class="col-md-12" style="margin-bottom: 0.75rem;">
                               <h3>Select comorbidities</h3>
+                              <p>Treatment recommendations for <span style="font-weight: bold;"> </span> will change dependent on your <strong>patient's comorbitities</strong></p>
                            </div>
                            <div class="col-md-6">
                               <div class="card">
@@ -4443,8 +4454,9 @@
                               </div>
                            </div>
                         </div>
-                        <button id="showalg" type="button" class="btn" data-dismiss="modal" style="margin-top: 1rem;">Show treatment algorithm</button>
                         <p style="margin-top: 1rem;">Please remember that treatment regimes may change for comorbidities not yet covered by this list.</p>
+                        <button id="showalg" type="button" class="btn" data-dismiss="modal">Show treatment algorithm</button>
+                        
                      </div>
                      <!-- <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Show treatment algorithm</button>

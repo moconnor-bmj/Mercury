@@ -2745,9 +2745,12 @@ $(function() {
   comorbidities.on('change', function () {
     $('#showalg').toggleClass("btn-secondary", comorbidities.is(":checked"));
   });
+  // Grab the topic title from the H1 tag and drop it into the modal para
+  $('#editComo').find('p span').append($('#topicMenuTop h1').html());
 });
 
-// Drug hyperlink to toggle between cplus & no cplus, changing content
+// Drug hyperlink to toggle between cplus & no cplus info (changes content)
+// (REFACTOR - prototype code)
 $(function() {
     $('#como_link_1').click(function(event) {
         event.preventDefault();

@@ -10810,6 +10810,14 @@ span.badge.badge-bp.notification-number {
     background-color: #369
 }
 
+#editComo .modal-body {
+    padding-bottom: 1rem;
+}
+
+#editComo p {
+    padding-left: 0;
+}
+
 #editComo button.btn {
     background-color: rgba(0, 0, 0, 0.12);
     box-shadow: none;
