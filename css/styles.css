@@ -10813,22 +10813,10 @@ span.badge.badge-bp.notification-number {
     color: #fff;
     background-color: #369
 }
-<<<<<<< HEAD
 /* ADDS COMMAS AFTER EACH COMOBILITY IS SELECTED FROM MODAL */
 #como-1 #comoselected-1 span + span:before {
     content:', '
     }
-=======
-
-#editComo .modal-body {
-    padding-bottom: 1rem;
-}
-
-#editComo p {
-    padding-left: 0;
-}
-
->>>>>>> b8dbd16a4fc67cc43cd1e085c4540fa01e178fb3
 #editComo button.btn {
     background-color: rgba(0, 0, 0, 0.12);
     box-shadow: none;
