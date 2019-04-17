@@ -9716,7 +9716,7 @@ table.responsive.table-striped.cell-border.dataTable.no-footer,
 
     .list-group-item {
         -ms-flex-align: center;
-        display: -ms-flexbox;
+        display: -ms-flexbox;acc
         -ms-flex-flow: row wrap
     }
 }
