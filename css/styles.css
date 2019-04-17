@@ -4033,7 +4033,9 @@ html:lang(zh-cn) #feedbackForm .row:nth-child(8).smTxt .col-md-3:nth-child(2) {
 .login-form button.close span {
     font-size: 2.125rem
 }
-
+.modal-registration-form #editComo .modal-body {
+    padding:1.25rem 1.5rem;
+}
 .modal-registration-form .modal-body,
 .registration-form .modal-body,
 .modal-registration-success .modal-body,
@@ -10811,6 +10813,12 @@ span.badge.badge-bp.notification-number {
     color: #fff;
     background-color: #369
 }
+<<<<<<< HEAD
+/* ADDS COMMAS AFTER EACH COMOBILITY IS SELECTED FROM MODAL */
+#como-1 #comoselected-1 span + span:before {
+    content:', '
+    }
+=======
 
 #editComo .modal-body {
     padding-bottom: 1rem;
@@ -10820,6 +10828,7 @@ span.badge.badge-bp.notification-number {
     padding-left: 0;
 }
 
+>>>>>>> b8dbd16a4fc67cc43cd1e085c4540fa01e178fb3
 #editComo button.btn {
     background-color: rgba(0, 0, 0, 0.12);
     box-shadow: none;
