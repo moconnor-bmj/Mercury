@@ -2730,6 +2730,9 @@ $(function() {
   var comorbidities = $("input[name='comorbidity']");
   comorbidities.on('change', function () {
     $('#showalg').toggleClass("btn-secondary", comorbidities.is(":checked"));
+    $('#showalg span.ticked').toggleClass("show", comorbidities.is(":checked"));
+    $('#showalg span.not-ticked').toggleClass("hide", comorbidities.is(":checked"));
+
   });
 });
 

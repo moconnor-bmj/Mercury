@@ -10536,10 +10536,12 @@ p.ref-link {
     position: relative
 }
 
-.browser-update-bar-hide {
+.browser-update-bar-hide, .hide {
     display: none
 }
-
+.show{
+    display: block
+}
 #browser-update-hide-button {
     font-size: 30px;
     cursor: pointer;
