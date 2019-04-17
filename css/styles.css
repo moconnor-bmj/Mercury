@@ -10731,20 +10731,38 @@ span.badge.badge-bp.notification-number {
     color: #c50084
 }
 
-#como-1.card button,
-#como-2.card button {
-    margin-top: -10px;
-    float: right;
+#como-1.card button.edit-cplus,
+#como-2.card button.edit-cplus {
     background-color: #fff;
-    color: #c50084;
     border: 3px solid #c50084;
-    border-radius: 4px
+    border-radius: 4px;
+    color: #c50084;
+    float: right;
+    padding: 8px 10px;
+    text-transform: inherit;
 }
 
-#como-1.card button:hover,
-#como-1.card button:focus,
-#como-2.card button:hover,
-#como-2.card button:focus {
+#como-1.card button.edit-cplus:hover,
+#como-1.card button.edit-cplus:focus,
+#como-2.card button.edit-cplus:hover,
+#como-2.card button.edit-cplus:focus {
+    background-color: #c50084;
+    color: #fff;
+    outline: none
+}
+
+#como-1.card button.btn-cplus,
+#como-2.card button.btn-cplus {
+    background-color: #c50084;
+    color: #fff;
+    border-radius: 4px;
+    text-transform: inherit;
+}
+
+#como-1.card button.edit-cplus:hover,
+#como-1.card button.edit-cplus:focus,
+#como-2.card button.edit-cplus:hover,
+#como-2.card button.edit-cplus:focus {
     background-color: #c50084;
     color: #fff;
     outline: none
@@ -10752,7 +10770,8 @@ span.badge.badge-bp.notification-number {
 
 #como-1 .material-icons,
 #como-2 .material-icons {
-    font-size: 50px
+    font-size: 30px;
+    color: #fff;
 }
 
 #como-2 {
@@ -10793,6 +10812,14 @@ span.badge.badge-bp.notification-number {
     background-color: #369
 }
 
+#editComo .modal-body {
+    padding-bottom: 1rem;
+}
+
+#editComo p {
+    padding-left: 0;
+}
+
 #editComo button.btn {
     background-color: rgba(0, 0, 0, 0.12);
     box-shadow: none;
@@ -10828,47 +10855,70 @@ span.badge.badge-bp.notification-number {
     margin-bottom: 1rem;
 }
 
-#poce_contents.treatment-algorithm .treatment-box-cplus p.como_link a {
+#poce_contents.treatment-algorithm .treatment-box-cplus a#como_link_1 {
     color: #c50084;
     text-decoration: none;
 }
 
-#poce_contents.treatment-algorithm .treatment-box-cplus p.como_link a:hover {
+#poce_contents.treatment-algorithm .treatment-box-cplus a#como_link_1:hover {
     text-decoration: underline;
 }
 
-#poce_drug_msg {
+#no_cplus_drug_msg,
+#cplus_drug_msg {
     border: 1px dashed #c50084;
     display: table-cell;
     margin-bottom: 1rem;
     padding: 1rem 1rem 1rem 0;
     text-indent: -16px;
+    min-height: 71px;
 }
 
-#poce_drug_msg h3 {
+#no_cplus_drug_msg {
+    background-color: #FFEEEE;
+    display: none;
+}
+
+#no_cplus_drug_msg h3,
+#cplus_drug_msg h3 {
     padding-left: 55px;
     text-indent: -23px;
 }
 
-#poce_drug_msg .material-icons {
+#no_cplus_drug_msg h3 span:nth-of-type(2) {
+    font-size: 22px;
+    position: relative;
+    top: 8px;
+}
+
+#no_cplus_drug_msg .material-icons,
+#cplus_drug_msg .material-icons {
     color: #c50084;
     font-size: 42px;
     position: relative;
     top: 7px;
 }
 
+#poce_contents.treatment-algorithm .treatment-box-cplus .small-or {
+        margin: 8px 0 8px 0
+}
 
+#poce_contents.treatment-algorithm .treatment-box-cplus p.withCKD {
+    margin: 0;
+    font-size: 14px;
+}
 
+#poce_contents.treatment-algorithm .treatment-box-cplus p.withCKD a {
+    font-size: 14px;
+}
 
-
-
-#poce-contents div[id$='-como-content'] {
+#poce_contents div[id$='-como-content'] {
     padding: 1rem !important;
     border: 1px dashed #c50084;
     background-color: #f8e0f0;
 }
 
-#poce_content .treatment-table .txtwrap::after {
+#poce_contents span.txtwrap::after {
     content: "\e90c";
     font-family: 'Material Icons';
     font-size: 30px;
@@ -10878,7 +10928,7 @@ span.badge.badge-bp.notification-number {
     color: #c50084;
 }
 
-#poce_content .treatment-table .txtwrap.no-icon::after {
+#poce_contents span.txtwrap.no-icon::after {
     content: " ";
 }
 
