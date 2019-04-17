@@ -2744,6 +2744,9 @@ $(function() {
   var comorbidities = $("input[name='comorbidity']");
   comorbidities.on('change', function () {
     $('#showalg').toggleClass("btn-secondary", comorbidities.is(":checked"));
+    $('#showalg span.ticked').toggleClass("show", comorbidities.is(":checked"));
+    $('#showalg span.not-ticked').toggleClass("hide", comorbidities.is(":checked"));
+
   });
   // Grab the topic title from the H1 tag and drop it into the modal para
   $('#editComo').find('p span').append($('#topicMenuTop h1').html());
