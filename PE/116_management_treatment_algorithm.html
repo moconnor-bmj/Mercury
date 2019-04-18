@@ -4419,10 +4419,12 @@
                               </div>
                            </div>
                         </div>
-                        <button id="showalg" type="button" class="btn" data-dismiss="modal" style="margin-top: 1rem;">
-                           <span class="not-ticked">NO COMORBIDITIES TO ADD</span>
-                           <span class="ticked hide">Show treatment algorithm</span>
-                        </button>
+                           <!-- <button type="button" data-dismiss="modal" aria-label="Close" class="not-ticked close btn"style=""></button> -->
+
+                           <button type="button" class="btn showalg not-ticked" data-dismiss="modal" aria-label="Close" style="cursor: pointer; opacity: 1;pointer-events: all; margin-top: 1rem">NO COMORBIDITIES TO ADD</button>
+
+                           <button id="showalg" type="button" data-dismiss="modal" class="btn showalg ticked hide" style="cursor: pointer; opacity: 1;pointer-events: all; margin-top: 1rem">Show treatment algorithm</button>
+                           
                         <p style="margin-top: 1rem;">Please remember that treatment regimes may change for comorbidities not yet covered by this list.</p>
                      </div>
                      <!-- <div class="modal-footer">
