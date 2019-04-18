@@ -11073,7 +11073,7 @@ span.badge.badge-bp.notification-number {
 #poce_contents .poce_urgent {
     padding: 1rem !important;
     border: 1px dashed #c50084;
-    background-color: #f8e0f0;
+    /* background-color: #f8e0f0; */
 }
 
 #poce_contents .poce_urgent h3 {
