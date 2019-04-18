@@ -10816,7 +10816,7 @@ span.badge.badge-bp.notification-number {
 /* ADDS COMMAS AFTER EACH COMOBILITY IS SELECTED FROM MODAL */
 #como-1 #comoselected-1 span + span:before {
     content:', '
-    }
+}
 #editComo button.btn {
     background-color: rgba(0, 0, 0, 0.12);
     box-shadow: none;
