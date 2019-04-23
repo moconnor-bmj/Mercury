@@ -10873,7 +10873,10 @@ span.badge.badge-bp.notification-number {
     text-indent: -34px;
 }
 #poce_drug_msg .material-icons svg.co-morbidity-icon-pink, .material-icons svg.co-morbidity-icon-pink {
-    height:30px;
+    height:30px
+}
+.modal-dialog svg.co-morbidity-icon-pink {
+    height:40px
 }
 #poce_drug_msg .poce_title {
     padding-left: 50px;
