@@ -4036,6 +4036,15 @@ html:lang(zh-cn) #feedbackForm .row:nth-child(8).smTxt .col-md-3:nth-child(2) {
 .modal-registration-form #editComo .modal-body {
     padding: 1.25rem 1.5rem    
 }
+.modal-registration-form #editComo .modal-body ul li label.custom-checkbox {
+    margin-bottom: 0
+}
+.modal-registration-form #editComo .modal-body .list-group-flush:first-child .list-group-item:last-child {
+    margin:0
+}
+.modal-registration-form #editComo .modal-body .list-group-flush .list-group-item{
+    margin:0.1rem 0
+}
 .modal-registration-form .modal-body,
 .registration-form .modal-body,
 .modal-registration-success .modal-body,
@@ -10798,6 +10807,13 @@ span.badge.badge-bp.notification-number {
 #como-1 #comoselected-1 span + span:before {
     content:', '
 }
+#comoselected-1 button.btn {
+    
+}
+#como-1 .card-block b {
+    vertical-align: -webkit-baseline-middle;
+    vertical-align: sub;
+}
 #editComo button.btn {
     background-color: rgba(0, 0, 0, 0.12);
     box-shadow: none;
@@ -10846,27 +10862,35 @@ span.badge.badge-bp.notification-number {
     border: 1px dashed #c50084;
     display: table-cell;
     margin-bottom: 1rem;
-    padding: 1rem 1rem 1rem 0;
+    padding: 1rem 1rem 1rem 3rem;
     text-indent: -16px;
 }
-
-#poce_drug_msg h3 {
-    padding-left: 55px;
-    text-indent: -23px;
-}
-
 #poce_drug_msg .material-icons {
     color: #c50084;
     font-size: 42px;
     position: relative;
-    top: 7px;
+    top: 6px;
+    text-indent: -34px;
 }
-
-
-
-
-
-
+#poce_drug_msg .material-icons svg.co-morbidity-icon-pink, .material-icons svg.co-morbidity-icon-pink {
+    height:30px;
+}
+#poce_drug_msg .poce_title {
+    padding-left: 50px;
+    text-indent: -8px;
+    color: #c50084;
+    font-size: 1.125rem;
+    margin: 0 0 1rem -3rem;
+    float: none!important;
+}
+#poce_drug_msg h3{
+    padding:0;
+    text-indent: 0;
+    float: none!important;
+}
+#poce_drug_msg p {
+    text-indent: initial;
+}
 #poce-contents div[id$='-como-content'] {
     padding: 1rem !important;
     border: 1px dashed #c50084;
