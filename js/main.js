@@ -2746,7 +2746,7 @@ $(function() {
     $('.showalg').toggleClass("btn-secondary", comorbidities.is(":checked"));
     $('button.showalg.ticked').toggleClass("show", comorbidities.is(":checked"));
     $('button.showalg.not-ticked').toggleClass("hide", comorbidities.is(":checked"));
-    $(this).closest('li.list-group-item ').css({"border": "1px dashed #c50084", "background": "#f8e0f0"});
+    $(this).closest('li.list-group-item ').toggleClass("selected", comorbidities.is(":checked"));
 
   });
   // Grab the topic title from the H1 tag and drop it into the modal para

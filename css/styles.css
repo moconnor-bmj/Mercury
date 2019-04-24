@@ -4045,6 +4045,10 @@ html:lang(zh-cn) #feedbackForm .row:nth-child(8).smTxt .col-md-3:nth-child(2) {
 .modal-registration-form #editComo .modal-body .list-group-flush .list-group-item{
     margin:0.1rem 0
 }
+.modal-registration-form #editComo .modal-body .list-group-flush .list-group-item.selected {
+    border:1px dashed #c50084;
+    background: #f8e0f0
+}
 .modal-registration-form .modal-body,
 .registration-form .modal-body,
 .modal-registration-success .modal-body,
@@ -10744,7 +10748,6 @@ span.badge.badge-bp.notification-number {
 
 #como-1.card button,
 #como-2.card button {
-    margin-top: -10px;
     float: right;
     background-color: #fff;
     color: #c50084;
@@ -10890,6 +10893,21 @@ span.badge.badge-bp.notification-number {
 }
 .modal-dialog svg.co-morbidity-icon-pink {
     height:40px
+}
+.panel-title .txtwrap .material-icons {
+    position: absolute;
+    float: right;
+    top: -8px
+}
+
+.panel-title .txtwrap.no-icon .material-icons svg.co-morbidity-icon-pink {
+    display:none
+}
+.panel-title .txtwrap .material-icons svg.co-morbidity-icon-pink {
+    height: 20px;
+    top: 4px;
+    position: relative;
+    left: 15px    
 }
 #poce-contents div[id$='-como-content'] {
     padding: 1rem !important;
