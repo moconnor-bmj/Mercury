@@ -2746,11 +2746,19 @@ $(function() {
     $('.showalg').toggleClass("btn-secondary", comorbidities.is(":checked"));
     $('button.showalg.ticked').toggleClass("show", comorbidities.is(":checked"));
     $('button.showalg.not-ticked').toggleClass("hide", comorbidities.is(":checked"));
-    $(this).closest('li.list-group-item ').css("border", "1px dashed #c50084");
+    $(this).closest('li.list-group-item ').css({"border": "1px dashed #c50084", "background": "#f8e0f0"});
 
   });
   // Grab the topic title from the H1 tag and drop it into the modal para
   $('#editComo').find('p span').append($('#topicMenuTop h1').html());
+});
+
+// If the drop down contains a cor-mob content, show the icon in the title
+
+$(function() {
+    if ($('#poce_contents .panel-group').find('poce_drug_msg').lenghth !==0) {
+        $(this).addClass('cor-mob-icon');
+    };
 });
 
 // Drug hyperlink to toggle between cplus & no cplus info (changes content)

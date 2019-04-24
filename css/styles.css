@@ -10837,27 +10837,21 @@ span.badge.badge-bp.notification-number {
 #poce_contents.treatment-algorithm .card-block {
     padding: 0 !important;
 }
-
-#poce_contents.treatment-algorithm .treatment-wrap {
-    
+#poce_contents.treatment-algorithm .treatment-wrap {   
 }
-
 #poce_contents.treatment-algorithm .treatment-box-cplus {
     border: 1px solid #c50084;
     background: none;
     padding: 1rem;
     margin-bottom: 1rem;
 }
-
 #poce_contents.treatment-algorithm .treatment-box-cplus p.como_link a {
     color: #c50084;
     text-decoration: none;
 }
-
 #poce_contents.treatment-algorithm .treatment-box-cplus p.como_link a:hover {
     text-decoration: underline;
 }
-
 #poce_drug_msg {
     border: 1px dashed #c50084;
     display: table-cell;
@@ -10865,26 +10859,12 @@ span.badge.badge-bp.notification-number {
     padding: 1rem 1rem 1rem 3rem;
     text-indent: -16px;
 }
-#poce_drug_msg .material-icons {
-    color: #c50084;
-    font-size: 42px;
-    position: relative;
-    top: 6px;
-    text-indent: -34px;
-}
-#poce_drug_msg .material-icons svg.co-morbidity-icon-pink, .material-icons svg.co-morbidity-icon-pink {
-    height:30px
-}
-.modal-dialog svg.co-morbidity-icon-pink {
-    height:40px
-}
 #poce_drug_msg .poce_title {
-    padding-left: 50px;
-    text-indent: -8px;
+    padding-left: 3rem;
     color: #c50084;
     font-size: 1.125rem;
     margin: 0 0 1rem -3rem;
-    float: none!important;
+    display: inline-block;
 }
 #poce_drug_msg h3{
     padding:0;
@@ -10894,12 +10874,28 @@ span.badge.badge-bp.notification-number {
 #poce_drug_msg p {
     text-indent: initial;
 }
+#poce_drug_msg .material-icons svg {
+    top:-14px;
+    left:-6px;
+    position: relative;
+}
+#como-1 .material-icons{font-size:30px;}
+#como-1 svg.co-morbidity-icon-pink {
+    top: 3px;
+    position: relative;
+}
+#poce_drug_msg .material-icons svg.co-morbidity-icon-pink, 
+.material-icons svg.co-morbidity-icon-pink {
+    height:30px;
+}
+.modal-dialog svg.co-morbidity-icon-pink {
+    height:40px
+}
 #poce-contents div[id$='-como-content'] {
     padding: 1rem !important;
     border: 1px dashed #c50084;
     background-color: #f8e0f0;
 }
-
 #poce_content .treatment-table .txtwrap::after {
     content: "\e90c";
     font-family: 'Material Icons';
