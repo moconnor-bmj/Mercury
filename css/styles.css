@@ -10972,7 +10972,7 @@ span.badge.badge-bp.notification-number {
 }
 
 #poce_contents #tip_pitfall .card-block {
-    padding: 1rem
+    padding: 1rem!important
 }
 /* CHANGE PL VALUE IN SASS FILE */
 #poce_contents #tip_pitfall .card-block p+ul {
@@ -11100,7 +11100,8 @@ span.badge.badge-bp.notification-number {
 }
 
 #poce_contents .toggle:checked+.title+.content {
-    max-height: 500px
+    max-height: 500px;    
+    overflow: auto;
 }
 
 #poce_contents .toggle:checked+.title:before {
